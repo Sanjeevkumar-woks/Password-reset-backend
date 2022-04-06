@@ -9,9 +9,6 @@ const send_mail = async (email, subject, content) => {
         type: 'OAuth2',
         user: process.env.MAILER_USERNAME,
         pass: process.env.MAILER_PASSWORD,
-        clientId: process.env.CLIENT_ID,
-        clientSecret: process.env.CLIENT_SECRET,
-        refreshToken: process.env.TOKEN_URI
     }
 });
 
