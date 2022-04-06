@@ -34,10 +34,10 @@ const forgotPassword = {
           );
 
           // generating link for resetting the password
-
+            
           const link = `http://localhost:3000/users/forgot-password/${data._id}/${token}`;
           //forgot-password-fullstack.herokuapp.com/users/login/forgot-password/${data._id}/${token}
-          https: await send_mail(
+           await send_mail(
             data.email,
             "Link to reset the password",
             `Click this link to reset the password ${link}`
